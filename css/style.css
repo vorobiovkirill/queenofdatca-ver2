@@ -1,0 +1,1576 @@
+/* normalize.css v3.0.3 */
+/* 1. Set default font family to sans-serif. 2. Prevent iOS and IE text size adjust after device orientation change, without disabling user zoom. */
+html {
+	font-family: sans-serif; /* 1 */
+	-ms-text-size-adjust: 100%; /* 2 */
+	-webkit-text-size-adjust: 100%; /* 2 */
+}
+/* Remove default margin. */
+body {
+	margin: 0;
+}
+/* HTML5 display definitions ========================================================================== */
+/* Correct `block` display not defined for any HTML5 element in IE 8/9. Correct `block` display not defined for `details` or `summary` in IE 10/11 and Firefox. Correct `block` display not defined for `main` in IE 11. */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+	display: block;
+}
+/* 1. Correct `inline-block` display not defined in IE 8/9. 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera. */
+audio,
+canvas,
+progress,
+video {
+	display: inline-block; /* 1 */
+	vertical-align: baseline; /* 2 */
+}
+/* Prevent modern browsers from displaying `audio` without controls. Remove excess height in iOS 5 devices. */
+audio:not([controls]) {
+	display: none;
+	height: 0;
+}
+/* Address `[hidden]` styling not present in IE 8/9/10. Hide the `template` element in IE 8/9/10/11, Safari, and Firefox < 22. */
+[hidden],
+template {
+	display: none;
+}
+/* Links ========================================================================== */
+/* Remove the gray background color from active links in IE 10. */
+a {
+	background-color: transparent;
+}
+/* Improve readability of focused elements when they are also in an active/hover state. */
+a:active,
+a:hover {
+	outline: 0;
+}
+/* Text-level semantics ========================================================================== */
+/* Address styling not present in IE 8/9/10/11, Safari, and Chrome. */
+abbr[title] {
+	border-bottom: 1px dotted;
+}
+/* Address style set to `bolder` in Firefox 4+, Safari, and Chrome. */
+b,
+strong {
+	font-weight: bold;
+}
+/* Address styling not present in Safari and Chrome. */
+dfn {
+	font-style: italic;
+}
+/* Address variable `h1` font-size and margin within `section` and `article` contexts in Firefox 4+, Safari, and Chrome. */
+h1 {
+	font-size: 2em;
+	margin: 0.67em 0;
+}
+/* Address styling not present in IE 8/9. */
+mark {
+	background: #ff0;
+	color: #000;
+}
+/* Address inconsistent and variable font size in all browsers. */
+small {
+	font-size: 80%;
+}
+/* Prevent `sub` and `sup` affecting `line-height` in all browsers. */
+sub,
+sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+sup {
+	top: -0.5em;
+}
+sub {
+	bottom: -0.25em;
+}
+/* Embedded content ========================================================================== */
+/* Remove border when inside `a` element in IE 8/9/10. */
+img {
+	border: 0;
+}
+/* Correct overflow not hidden in IE 9/10/11. */
+svg:not(:root) {
+	overflow: hidden;
+}
+/* Grouping content ========================================================================== */
+/* Address margin not present in IE 8/9 and Safari. */
+figure {
+	margin: 1em 40px;
+}
+/* Address differences between Firefox and other browsers. */
+hr {
+	box-sizing: content-box;
+	height: 0;
+}
+/* Contain overflow in all browsers. */
+pre {
+	overflow: auto;
+}
+/* Address odd `em`-unit font size rendering in all browsers. */
+code,
+kbd,
+pre,
+samp {
+	font-family: monospace, monospace;
+	font-size: 1em;
+}
+/* Forms ========================================================================== */
+/* Known limitation: by default, Chrome and Safari on OS X allow very limited styling of `select`, unless a `border` property is set. */
+/* 1. Correct color not being inherited. Known issue: affects color of disabled elements. 2. Correct font properties not being inherited. 3. Address margins set differently in Firefox 4+, Safari, and Chrome. */
+button,
+input,
+optgroup,
+select,
+textarea {
+	color: inherit; /* 1 */
+	font: inherit; /* 2 */
+	margin: 0; /* 3 */
+}
+/* Address `overflow` set to `hidden` in IE 8/9/10/11. */
+button {
+	overflow: visible;
+}
+/* Address inconsistent `text-transform` inheritance for `button` and `select`. All other form control elements do not inherit `text-transform` values. Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera. Correct `select` style inheritance in Firefox. */
+button,
+select {
+	text-transform: none;
+}
+/* 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio` and `video` controls. 2. Correct inability to style clickable `input` types in iOS. 3. Improve usability and consistency of cursor style between image-type `input` and others. */
+button,
+html input[type="button"], /* 1 */
+input[type="reset"],
+input[type="submit"] {
+	-webkit-appearance: button; /* 2 */
+	cursor: pointer; /* 3 */
+}
+/* Re-set default cursor for disabled elements. */
+button[disabled],
+html input[disabled] {
+	cursor: default;
+}
+/* Remove inner padding and border in Firefox 4+. */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+	border: 0;
+	padding: 0;
+}
+/* Address Firefox 4+ setting `line-height` on `input` using `!important` in the UA stylesheet. */
+input {
+	line-height: normal;
+}
+/* It's recommended that you don't attempt to style these elements. Firefox's implementation doesn't respect box-sizing, padding, or width. 1. Address box sizing set to `content-box` in IE 8/9/10. 2. Remove excess padding in IE 8/9/10. */
+input[type="checkbox"],
+input[type="radio"] {
+	box-sizing: border-box; /* 1 */
+	padding: 0; /* 2 */
+}
+/* Fix the cursor style for Chrome's increment/decrement buttons. For certain `font-size` values of the `input`, it causes the cursor style of the decrement button to change from `default` to `text`. */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+	height: auto;
+}
+/* 1. Address `appearance` set to `searchfield` in Safari and Chrome. 2. Address `box-sizing` set to `border-box` in Safari and Chrome. */
+input[type="search"] {
+	-webkit-appearance: textfield; /* 1 */
+	box-sizing: content-box; /* 2 */
+}
+/* Remove inner padding and search cancel button in Safari and Chrome on OS X. Safari (but not Chrome) clips the cancel button when the search input has padding (and `textfield` appearance). */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+	-webkit-appearance: none;
+}
+/* Define consistent border, margin, and padding. */
+fieldset {
+	border: 1px solid #c0c0c0;
+	margin: 0 2px;
+	padding: 0.35em 0.625em 0.75em;
+}
+/* 1. Correct `color` not being inherited in IE 8/9/10/11. 2. Remove padding so people aren't caught out if they zero out fieldsets. */
+legend {
+	border: 0; /* 1 */
+	padding: 0; /* 2 */
+}
+/* Remove default vertical scrollbar in IE 8/9/10/11. */
+textarea {
+	overflow: auto;
+}
+/** Don't inherit the `font-weight` (applied by a rule above). NOTE: the default cannot safely be changed in Chrome and Safari on OS X. */
+optgroup {
+	font-weight: bold;
+}
+/* Tables ========================================================================== */
+/** Remove most spacing between table cells. */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+td,
+th {
+	padding: 0;
+}
+/* ---------------------------------------------------------------- START Общие стили --------------------------------------------------------- */
+* {
+	margin: 0;
+	padding: 0;
+	outline: none;
+	box-sizing: border-box;
+}
+*:before, *:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+html {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+#bgimage {
+	width: 100%;
+	height: 100%;
+	font-family: "open_sansregular", sans-serif;
+	color: #7B7B7B;
+	background-color: #fff;
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+p {
+	color: #7B7B7B;
+	text-decoration: none;
+	font-size: 15px;
+	line-height: 24px;
+	letter-spacing: 1px;
+	word-spacing: 0;
+}
+a {
+	color: #102540;
+	cursor: pointer;
+	background-color: transparent;
+	text-decoration: none;
+}
+li {
+	list-style-type: none;
+}
+h1 {
+	color: #373737;
+	font-size: 250%;
+	line-height: 100%;
+	color: #858B92;
+	text-decoration: none;
+	letter-spacing: 1px;
+	word-spacing: 0
+}
+h2 {
+	color: #373737;
+	font-size: 150%;
+	line-height: 100%;
+	color: #858B92;
+	text-decoration: none;
+	letter-spacing: 1px;
+	word-spacing: 0
+}
+img {
+	border: 0;
+	width: 100%;
+}
+.wrapp-act-blk, .wrapp-vd-blk, .wrapp-ds-blk, .wrapp-tc-blk {
+	width: 100%;
+	margin-top: 25px;
+}
+.container {
+	width: 90%;
+	margin: auto;
+}
+.yacht-sct .txt-op, .spf-sct .txt-op {
+	background: #fff;
+}
+/* ---------------------------------------------------------------- END Общие стили --------------------------------------------------------- */
+/***** START картинки на задний фон для всех страниц *****/
+/* фон главной страницы */
+.body-main-page {
+	background: url('../images/bg-main-page.jpg');
+}
+/* фон страницы activities */
+.body-act-page {
+	background: url('../images/bg-act-page.jpg');
+}
+/* фон страницы the yacht */
+.body-yacht-page {
+	background: url('../images/bg-yacht-page.jpg');
+}
+/* фон страницы specifications */
+.body-spf-page {
+	background: url('../images/bg-spf-page.jpg');
+}
+/* фон страницы food */
+.body-food-page {
+	background: url('../images/bg-food-page.jpg');
+}
+/* фон страницы gallery */
+.body-glr-page {
+	background: url('../images/bg-glr-page.jpg');
+}
+/* фон страницы prices */
+.body-prc-page {
+	background: url('../images/bg-prc-page.jpg');
+}
+/* фон страницы Contacts */
+.body-cont-page {
+	background: url('../images/bg-cont-page.jpg');
+}
+/* фон страницы destinations и дочерних */
+.body-dest-page, .body-ds-page, .body-tc-page, .body-vd-page {
+	background: url('../images/bg-dest-page.jpg');
+}
+/***** END картинки на задний фон для всех страниц *****/
+/***** START стили для главного блока и секции *****/
+#main-header {
+	width: 100%;
+	height: 60px;
+	background: #102540;
+	margin: 0 auto;
+	position: fixed;
+	z-index: 10;
+	top: 0;
+}
+.wrapper-main-txt {
+	width: 60%;
+	margin: 0 auto;
+	position: relative;
+	top: 55%;
+	right: 2%;
+}
+.container-main {
+	width: 100%;
+}
+.main-txt-1 {
+	width: 250px;
+	background-color: rgba(255, 255, 255, 0.88);
+	position: relative;
+}
+.main-txt-1 p {
+	font-size: 300%;
+	letter-spacing: 5px;
+	word-spacing: 0;
+	text-align: center;
+	padding: 15px 11px;
+}
+.main-txt-2 {
+	width: 230px;
+	background-color: rgba(255, 255, 255, 0.88);
+	position: relative;
+	left: 10%;
+}
+.main-txt-2 p {
+	font-size: 300%;
+	letter-spacing: 5px;
+	word-spacing: 0;
+	text-align: center;
+	padding: 15px 11px;
+}
+#main-op {
+	width: 50%;
+}
+.txt-op {
+	width: 100%;
+	background-color: #fff;
+	position: relative;
+	padding: 10px;
+	height: 315px;
+	overflow-y: scroll;
+	background: rgba(255,255,255,0.88);
+}
+.txt-op p {
+	line-height: 20px;
+	letter-spacing: 1px;
+	word-spacing: 0;
+	text-align: justify;
+	text-decoration: none;
+	padding: 5px 10px;
+}
+.tlt-txt-op {
+	color: #102540;
+	font-size: 22px;
+	line-height: 32px;
+	text-transform: uppercase;
+	word-spacing: 0;
+	letter-spacing: 0;
+}
+.qod-logo {
+	width: 249px;
+	height: 66px;
+	position: fixed;
+	top: 60px;
+	right: 10%;
+	color: #fff;
+	background-color: #fff;
+	background: url('../images/qod-logo.jpg');
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+.li-logo {
+	color: #fff;
+	text-decoration: none;
+	font-size: 30px;
+	letter-spacing: 5px;
+	word-spacing: 5px;
+	width: 400px;
+	text-transform: uppercase;
+	font-family: initial;
+	position: relative;
+	z-index: 10;
+}
+.hamburger {
+	position: relative;
+	display: inline-block;
+	width: 40px;
+	height: 25px;
+	margin: 0 20px 0px 80px;
+	border-top: 4px solid #fff;
+	border-bottom: 4px solid #fff;
+}
+.hamburger:before {
+	content: "";
+	position: absolute;
+	top: 6px;
+	left: 0px;
+	width: 100%;
+	border-top: 4px solid #fff;
+}
+/***** END стили для главного блока и секции *****/
+/***** START стили для меню *****/
+#menu-top {
+	width: 100%;
+	height: 60px;
+	margin: 0 auto;
+	float: left;
+	position: relative;
+}
+.nav-1 {
+	position: relative;
+	top: 20px;
+}
+.nav-1 li {
+	width: 150px;
+	float: left;
+}
+.nav-1 li a {
+	color: #fff;
+	text-decoration: none;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: 600;
+	letter-spacing: 1px;
+	line-height: 24px;
+	position: relative;
+}
+/*** START стили выпадающего меню ***/
+#menu-top .dropdown {
+	opacity: .7;
+	width: 100%;
+	position: absolute;
+	z-index: 9;
+	display: none;
+	top: 25px;
+	background: #102540;
+	padding: 20px 20px 20px;
+}
+#menu-top li:hover .dropdown {
+	display: block;
+}
+.dropdown ul {
+	float: left;
+	width: 250px;
+}
+#menu-top .dropdown li {
+	width: 100%;
+	height: 30px;
+	border-bottom: 1px solid rgba(0,0,0,.05);
+	padding: 0 40px;
+}
+#menu-top .dropdown li a {
+	line-height: 50px;
+	height: 35px;
+}
+/*** END стили выпадающего меню ***/
+/*** START стили адваптивного выезжающего меню ***/
+.container-2 {
+	display: none;
+	position: absolute;
+	height: 100%;
+	width: 15%;
+	left: 0;
+	-webkit-transition:  left .4s ease-in-out;
+	-moz-transition:  left .4s ease-in-out;
+	-ms-transition:  left .4s ease-in-out;
+	-o-transition:  left .4s ease-in-out;
+	transition:  left .4s ease-in-out;
+}
+.container-2.open-sidebar {
+	left: 240px;
+	z-index: 11;
+}
+.swipe-area {
+	position: absolute;
+	width: 50px;
+	left: 0;
+	top: 0;
+	height: 100%;
+	background: transparent;
+	z-index: 0;
+}
+#sidebar {
+	background: #102540;
+	position: absolute;
+	width: 240px;
+	left: -240px;
+	z-index: 11;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+#sidebar ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+#sidebar ul li {
+	margin: 0;
+}
+#sidebar ul li a {
+	padding: 15px 20px;
+	font-size: 16px;
+	font-weight: 100;
+	color: white;
+	text-decoration: none;
+	display: block;
+	border-bottom: 1px solid #fff;
+	-webkit-transition:  background .3s ease-in-out;
+	-moz-transition:  background .3s ease-in-out;
+	-ms-transition:  background .3s ease-in-out;
+	-o-transition:  background .3s ease-in-out;
+	transition:  background .3s ease-in-out;
+}
+#sidebar ul li:hover a {
+	background: #FFFFFF;
+	color: #102540;
+	font-weight: 700;
+}
+.main-content {
+	width: 100%;
+	height: 100%;
+	padding: 10px;
+	position: relative;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.main-content .content{
+	padding-left: 60px;
+	width: 100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.main-content .content h1{
+	font-weight: 100;
+}
+.main-content .content p{
+	width: 100%;
+	line-height: 160%;
+}
+.main-content #sidebar-toggle {
+	background: #102540;
+	display: block;
+	position: relative;
+	padding: 10px 7px;
+	float: left;
+	-webkit-box-radius: 3px;
+	-moz-box-radius: 3px;
+	-ms-box-radius: 3px;
+	box-radius: 3px;
+}
+.main-content #sidebar-toggle .bar{
+	display: block;
+	width: 18px;
+	margin-bottom: 3px;
+	height: 2px;
+	background-color: #fff;
+	-webkit-box-radius: 1px;
+	-moz-box-radius: 1px;
+	-ms-box-radius: 1px;
+	box-radius: 1px;
+}
+.main-content #sidebar-toggle .bar:last-child {
+	margin-bottom: 0;
+}
+/*** END стили адваптивного выезжающего меню ***/
+/*** START стили hover при наведении на li меню ***/
+.hvr-underline-from-center {
+	display: inline-block;
+	vertical-align: middle;
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-moz-osx-font-smoothing: grayscale;
+	position: relative;
+	overflow: hidden;
+	-webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	-moz-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	-o-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	-ms-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.hvr-underline-from-center:before {
+	content: "";
+	position: absolute;
+	z-index: -1;
+	left: 50%;
+	right: 50%;
+	bottom: -2px;
+	background: #858B92;
+	height: 3px;
+	-webkit-transition-property: left, right;
+	-moz-transition-property: left, right;
+	-ms-transition-property: left, right;
+	-o-transition-property: left, right;
+	transition-property: left, right;
+	-webkit-transition-duration: .3s;
+	transition-duration: .3s;
+	-webkit-transition-timing-function: ease-out;
+	transition-timing-function: ease-out;
+}
+.hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
+	left: 0;
+	right: 0;
+}
+/*** END стили hover при наведении на li меню ***/
+/***** END стили для меню *****/
+/***** START стили для footer *****/
+/*.footer-dev {
+	float: right;
+	margin-top: 2%;
+	}*/
+	.devname {
+		color: #00BCD4;
+	}
+	/*** START стили для devLantrix ***/
+	#ltx-studio {
+		width: 20px;
+		height: 20px;
+		margin: 0 auto;
+	}
+	a.lantrix-logo {
+		width: 30px;
+		height: 30px;
+		text-indent: -9999px;
+		overflow: hidden;
+		display: inline-block;
+		position: relative;
+		background: url('../images/logo-lantrix-2.png');
+		background-repeat: no-repeat;
+		background-size: cover;
+		margin-left: 3px;
+		vertical-align: middle;
+		-webkit-transition: .4s;
+		-moz-transition: .4s;
+		-ms-transition: .4s;
+		-o-transition: .4s;
+		transition: .4s;
+	}
+	.lantrix-logo:hover {
+		width: 30px;
+		height: 30px;
+		text-indent: -9999px;
+		overflow: hidden;
+		display: inline-block;
+		position: relative;
+		background: url('../images/logo-lantrix-2-hvr.png');
+		background-repeat: no-repeat;
+		background-size: cover;
+		margin-left: 3px;
+		vertical-align: middle;
+		-webkit-transition: .4s;
+		-moz-transition: .4s;
+		-ms-transition: .4s;
+		-o-transition: .4s;
+		transition: .4s;
+	}
+	/*** END стили для devLantrix ***/
+	/***** END стили для footer *****/
+	/***** START стили скролабара *****/
+	.txt-op::-webkit-scrollbar-track {
+		-webkit-box-shadow: inset 0 0 1px rgba(0,0,0,.3);
+		-moz-box-shadow: inset 0 0 1px rgba(0,0,0,.3);
+		-o-box-shadow: inset 0 0 1px rgba(0,0,0,.3);
+		-ms-box-shadow: inset 0 0 1px rgba(0,0,0,.3);
+		box-shadow: inset 0 0 1px rgba(0,0,0,.3);
+	}
+	.txt-op::-webkit-scrollbar-thumb {
+		background-color: #B6B6B6;
+		outline: 1px solid #B6B6B6;
+		border-radius: 50px;
+	}
+	.txt-op::-webkit-scrollbar {
+		width: .5em;
+	}
+	/***** END стили скролабара *****/
+	/***** START стили страницы /YACHT/ *****/
+	.yacht-sct {
+		position: fixed;
+		bottom: 0;
+		left: 5%;
+		width: 45% !important;
+	}
+	/***** END стили страницы /YACHT/ *****/
+	/***** START стили страницы /GALLERY/ *****/
+	.ullg-wrap {
+		width: 100%;
+		margin: 5px auto;
+	}
+	.first-glr-sct .lgallery li {
+		width: 185px;
+		height: 65px;
+		display: inline-block;
+	}
+	.second-glr-sct  .lgallery li {
+		width: 170px;
+		height: 65px;
+		display: inline-block;
+	}
+	.first-glr-sct {
+		position: fixed;
+		bottom: 0;
+		left: 5%;
+		width: 600px;
+	}
+	.second-glr-sct {
+		position: fixed;
+		right: 0;
+		top: 250px;
+		width: 550px;
+	}
+	.mobile-glr-sct {
+		display: none;
+		position: fixed;
+		bottom: 0;
+		left: 5%;
+		width: 40% !important;
+	}
+	/***** END стили страницы /GALLERY/ *****/
+	/***** START стили страницы /SPECIFICATION/ *****/
+	.spf-sct {
+		position: fixed;
+		bottom: 0;
+		left: 5%;
+		width: 40% !important;
+	}
+	.yacht-profile-block {
+		margin: 25px 0;
+	}
+	.yacht-profile-spec-column {
+		width: 100%;
+		float: left;
+		display: inline-block;
+	}
+	.yacht-profile-spec-group {
+		margin: 0 20px;
+	}
+	.yacht-profile-spec-section-title {
+		font-size: 18px;
+		line-height: 18px;
+		margin: 0 0 12px;
+	}
+	.yacht-profile-spec-list {
+		margin: 15px 15px 30px 10px;
+	}
+	.yacht-profile-spec-list li {
+		display: block;
+		margin: 0 0 7px;
+		font-size: 0;
+		line-height: 0;
+	}
+	.yacht-profile-spec-title {
+		font-size: 14px;
+		line-height: 18px;
+		margin: 0 3px 0 0;
+		color: #102540;
+		font-weight: 700;
+	}
+	.yacht-profile-spec-value {
+		font-size: 14px;
+		line-height: 18px;
+		color: #7B7B7B;
+		margin-left: 5px;
+	}
+	.yacht-images-block .fancybox img {
+		width: 350px;
+		height: 200px;
+	}
+	/***** END стили страницы /SPECIFICATIONS/ *****/
+	/***** START стили страницы /PRICES/ *****/
+	#price-op {
+		width: 1000px;
+		position: fixed;
+		bottom: 0;
+		left: 24%;
+	}
+	.txt-op-tb-pr {
+		width: 100%;
+		margin: 25px auto;
+		border-collapse: separate;
+		border-spacing: 0;
+		text-align: center;
+		border: 1px solid #7B7B7B;
+	}
+	.txt-op-tb-pr thead {
+		background-color: #EEEEEE;
+		color: #7B7B7B;
+		text-transform: uppercase;
+	}
+	.txt-op-tb-pr tr {
+		height: 30px;
+	}
+	.txt-op-tb-pr td {
+		width: 55px;
+	}
+	.tbrr {
+		border-right: 1px solid #7B7B7B;
+	}
+	/***** END стили страницы /PRICES/ *****/
+	/***** START стили страницы /DESTINATIONS/ *****/
+	.wrapp-dest-blk {
+		width: 100%;
+		margin: 0 auto;
+	}
+	.dst-sct {
+		position: fixed;
+		bottom: 0;
+		left: 4%;
+	}
+	.dest-blk {
+		width: 230px;
+		padding: 5px;
+		text-align: center;
+		display: inline-block;
+		margin-left: 35px;
+	}
+	/***** END стили страницы /DESTINATIONS/ *****/
+	/***** START стили страницы /ACTIVITIES/ *****/
+	.act-sct {
+		position: fixed;
+		bottom: 0;
+		left: 5%;
+		width: 45% !important;
+	}
+	.act-cont-blk {
+		width: 100%;
+		min-height: 245px;
+		margin: 0 auto;
+	}
+	.act-cont-blk-img {
+		width: 35%;
+		float: left;
+		margin: 10px;
+	}
+	.act-cont-blk-txt {
+		width: 100%;
+	}
+	.blk-img {
+		width: 100%;
+	}
+	.tlt-act-cont-blk {
+		color: #102540;
+		font-size: 26px;
+		line-height: 26px;
+		text-transform: uppercase;
+		word-spacing: 0;
+		letter-spacing: 0;
+		margin-left: 2%;
+	}
+	/***** END стили страницы /ACTIVITIES/ *****/
+	/***** START стили страницы /FOOD/ *****/
+	.food-sct {
+		position: fixed;
+		bottom: 0;
+		left: 5%;
+		width: 45% !important;
+	}
+	.hid-menu {
+		width: 662px;
+		position: fixed;
+		left: 917px;
+		top: 67%;
+		background-color: #fff;
+		padding: 10px;
+		height: 315px;
+		overflow-y: scroll;
+		transition: all .3s;
+		visibility: hidden;
+	}
+	.btn-menu:active, .btn-menu:focus + .hid-menu {
+		transition: all .3s;
+		visibility: visible;
+	}
+	.hid-menu:hover {
+		visibility: visible;
+		position: fixed;
+	}
+	.btn-menu {
+		float: right;
+		display: inline-block;
+		border-radius: 4px;
+		background-color: #7B7B7B;
+		border: none;
+		color: #FFFFFF;
+		text-align: center;
+		font-size: 16px;
+		padding: 10px;
+		width: 140px;
+		transition: all 0.5s;
+		cursor: pointer;
+		margin: 25px;
+	}
+	.food-tabs-p span {
+		color: #102540;
+	}
+	.food-tabs-ul {
+		font-size: 16px;
+		margin-left: 40px;
+		list-style-type: disc;
+	}
+	.food-tabs-ul li {
+		list-style-type: disc;
+	}
+	.food-tabs-img {
+		width: 350px;
+		float: right;
+		margin-right: 50px;
+	}
+	/***** END стили страницы /FOOD/ *****/
+	/***** START стили страницы /CONTACTS/ *****/
+	.cont-sct {
+		width: 75% !important;
+		position: fixed;
+		bottom: 0;
+		left: 13%;
+	}
+	.cnt-blk {
+		overflow: auto;
+		height: 320px;
+	}
+	#owner-table-info {
+		width: 100%;
+		text-align: center;
+	}
+	#owner-table-info a {
+		color: #7B7B7B;
+		text-decoration: none;
+	}
+	#owner-table-info b {
+		color: #514B4B;
+	}
+	#owner-table-info tr {
+		vertical-align: text-top;
+	}
+	tr.trs {
+		height: 20px;
+	}
+	#owner-table-info td {
+		width: 33.3%;
+	}
+	#owner-table-info p {
+		line-height: 14px;
+		font-size: 14px;
+	}
+	.owner-ul {
+		width: 100%;
+		text-align: center;
+	}
+	.owner-ul li {
+		line-height: 28px;
+	}
+	.cont-info-blk {
+		width: 100%;
+		margin: 0 auto;
+	}
+	.owner-blk {
+		width: 100%;
+		margin: 15px 0 auto;
+	}
+	/***** END стили страницы /CONTACTS/ *****/
+	/* ---------------------------------------------------------------- АДАПТИВ -------------------------------------------------------------------- */
+	@media only screen and (max-width: 1785px) {
+		.main-txt-1 p {
+			font-size: 250%;
+		}
+		.main-txt-2 p {
+			font-size: 250%;
+		}
+		.ullg-wrap {
+			margin: 5px 5px auto;
+		}
+		.lgallery li {
+			width: 170px;
+		}
+	}
+	@media only screen and (max-width: 1366px) {
+		/* main */
+		.wrapper-main-txt{
+			top: 55%;
+			right: 8%;
+		}
+		.main-txt-1 p {
+			font-size: 185%;
+		}
+		.main-txt-2 p {
+			font-size: 185%;
+		}
+		/* gallery */
+		.first-glr-sct .lgallery li {
+			width: 135px;
+		}
+		.second-glr-sct  .lgallery li {
+			width: 120px;
+		}
+		.first-glr-sct {
+			position: fixed;
+			bottom: 0;
+			left: 5%;
+			width: 450px;
+		}
+		.second-glr-sct {
+			position: fixed;
+			right: 0;
+			top: 180px;
+			width: 400px;
+		}
+		/* price */
+		#price-op {
+			width: 1000px;
+			left: 13%;
+		}
+		/* destinations */
+		.dest-blk {
+			width: 150px;
+		}
+		/* activities */
+		.act-cont-blk {
+			min-height: 185px;
+		}
+		/* food */
+		.hid-menu {
+			width: 500px;
+			position: fixed;
+			left: 647px;
+			top: 347px;
+			background-color: #fff;
+			padding: 10px;
+			height: 315px;
+			overflow-y: scroll;
+			transition: all .3s;
+			visibility: hidden;
+			display: block;
+		}
+	}
+	/***** START ДЛЯ ПЛАНШЕТОВ (IPAD MINI & NEXUS 7 LANDSCAPE) *****/
+	@media only screen and (max-width: 1025px) {
+		/* увеличиваем картинку */
+		#bgimage {
+			background: url('../images/mobile-img/tablet-body.jpg');
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-size: 100%;
+		}
+		.yacht-sct,
+		.act-sct,
+		.spf-sct,
+		.dst-sct,
+		.food-sct,
+		.price-sct,
+		.cont-sct {
+			top: 150px;
+		}
+		/* скрываем меню */
+		#menu-top {
+			display: none;
+		}
+		/* открываем мобильное меню */
+		.container-2 {
+			display: block !important;
+		}
+		/* подгоняем страницу (main) */
+		.wrapper-main-txt {
+			top: 70% !important;
+			right: 18% !important;
+		}
+		.main-txt-1 p {
+			font-size: 200%;
+		}
+		/* подгоняем страницу (destinations) */
+		.dest-blk {
+			width: 100%;
+			margin-left: 0;
+		}
+		/* подгоняем страницу (activities) */
+		.act-cont-blk-img {
+			width: 100%;
+			margin: 0;
+		}
+		/* подгоняем страницу (prices) */
+		#price-op {
+			width: 45%;
+			margin: 0 auto;
+			left: 0;
+		}
+		table {
+			overflow-x: auto;
+			display: block;
+		}
+		.prices-blk {
+			width: 100%;
+			top: 150px;
+		}
+		/* подгоняем страницу (contacts) */
+		#cont-info {
+			width: 100%;
+			min-height: 0;
+		}
+		.tlt-txt-op {
+			font-size: 24px;
+			margin-left: 0;
+		}
+		.footer-dev p {
+			font-size: 15px;
+		}
+	}
+	/***** END ДЛЯ ПЛАНШЕТОВ (IPAD MINI & NEXUS 7 LANDSCAPE) *****/
+	/***** START ДЛЯ ПЛАНШЕТОВ (NEXUS 7) *****/
+	@media only screen and (max-width: 785px) {
+		/* увеличиваем картинку */
+		#bgimage {
+			background: url('../images/mobile-img/mobile-body.jpg');
+			background-position: center center;
+			background-size: cover;
+			background-attachment: fixed;
+		}
+		#main-op {
+			width: 90% !important;
+			margin: 0 auto
+		}
+		/* расширяем белый блок контента */
+		.txt-op {
+			width: 100%;
+		}
+		.txt-op p {
+			font-size: 14px;
+			line-height: 28px;
+			padding: 5px 15px;
+		}
+		.yacht-sct,
+		.act-sct,
+		.spf-sct,
+		.dst-sct,
+		.food-sct,
+		.price-sct,
+		.cont-sct {
+			top: 60px;
+		}
+		/* скрываем меню */
+		#menu-top {
+			display: none;
+		}
+		/* открываем мобильное меню */
+		.container-2 {
+			display: block !important;
+		}
+		/* лого */
+		.qod-logo {
+			display: none;
+		}
+		/* подгоняем страницу (main) */
+		.wrapper-main-txt {
+			width: 100%;
+			top: 78% !important;
+			left: 0 !important;
+		}
+		.main-txt-1 {
+			width: 100%;
+		}
+		.main-txt-1 p {
+			font-size: 250%;
+			line-height: 60px;
+		}
+		/* подгоняем страницы (gallery) */
+		/* подгоняем страницы (specifications) */
+		.yacht-profile-block {
+			width: 100%;
+		}
+		.yacht-images-block {
+			width: 100%;
+		}
+		/* подгоняем страницу (destinations) */
+		.wrapp-dest-blk {
+			width: 100%;
+		}
+		.dest-blk {
+			width: 100%;
+			padding: 5px;
+			margin-left: 0;
+		}
+		/* подгоняем страницу (activities) */
+		.act-cont-blk-img {
+			width: 100%;
+			margin: 0;
+		}
+		/* подгоняем страницу (food) */
+		.food-tabs label {
+			display: list-item;
+			list-style-type: none;
+			border: 0;
+			top: 0;
+			left: 0;
+		}
+		/* подгоняем страницу (prices) */
+		#price-op {
+			width: 100%;
+			margin: 0 auto;
+			left: 0;
+		}
+		table {
+			overflow-x: auto;
+			display: block;
+		}
+		.prices-blk {
+			width: 100%;
+			top: 150px;
+		}
+		/* подгоняем страницу (contacts) */
+		#cont-info {
+			width: 100%;
+			min-height: 0;
+		}
+		.tlt-txt-op {
+			font-size: 24px;
+			margin-left: 0;
+		}
+	}
+	/***** END ДЛЯ ПЛАНШЕТОВ (NEXUS 7) *****/
+	/***** Высота мобильного меню в Landscape *****/
+	@media only screen and (max-height: 414px) {
+		#sidebar ul li a {
+			padding: 10px 20px;
+			font-size: 13px;
+		}
+	}
+	/***** START ДЛЯ МОБИЛ (IPHONE 6 PLUS) *****/
+	@media only screen and (max-width: 414px) {
+		/* увеличиваем картинку */
+		#bgimage {
+			background: url('../images/mobile-img/mobile-body2.jpg');
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-size: 100%;
+		}
+		#main-op {
+			width: 90% !important;
+			margin: 0 auto
+		}
+		.yacht-sct,
+		.act-sct,
+		.spf-sct,
+		.dst-sct,
+		.food-sct,
+		.price-sct,
+		.cont-sct,
+		.mobile-glr-sct {
+			top: 60px;
+		}
+		/* расширяем белый блок контента */
+		.txt-op {
+			width: 100%;
+			height: 300px;
+		}
+		.txt-op p {
+			font-size: 14px;
+			line-height: 28px;
+			padding: 5px 15px;
+		}
+		/* скрываем меню */
+		#menu-top {
+			display: none;
+		}
+		/* открываем мобильное меню */
+		.container-2 {
+			display: block !important;
+		}
+		/* лого */
+		.qod-logo {
+			display: none;
+		}
+		/* подгоняем страницу (main) */
+		.wrapper-main-txt {
+			width: 100%;
+			top: 8% !important;
+			left: 0 !important;
+		}
+		.container-main {
+			width: 100%;
+		}
+		.main-txt-1 {
+			width: 100%;
+		}
+		.main-txt-1 p {
+			font-size: 200%;
+			line-height: 55px;
+		}
+		.main-txt-2 {
+			width: 100%;
+			left: 0%;
+		}
+		/* подгоняем страницу (yacht) */
+		.yacht-sct {
+			width: 90% !important;
+		}
+		/* подгоняем страницу (gallery) */
+		.main-glr-sct {
+			margin: 250px auto 0 !important;
+		}
+		.lb-bkl, .rt-bkl {
+			position: relative;
+			margin-top: 0;
+			left: 0;
+		}
+		.lgallery {
+			width: 100%;
+			margin: 0 auto;
+		}
+		.lgallery li {
+			width: 100%;
+		}
+		.first-glr-sct, .second-glr-sct {
+			display: none;
+		}
+		.mobile-glr-sct {
+			display: block;
+		}
+		.mobile-glr-sct .txt-op {
+			height: 670px;
+		}
+		/* подгоняем страницу (specifications) */
+		.yacht-profile-block {
+			margin: 15px 0 30px;
+			width: 100%;
+		}
+		.yacht-profile-spec-group {
+			margin: 0 20px 23px;
+		}
+		.yacht-images-block {
+			width: 100%;
+		}
+		.img-f-l {
+			width: 100%;
+			float: none;
+		}
+		.img-f-r {
+			width: 100%;
+		}
+		.yacht-profile-spec-section-title {
+			font-size: 15px;
+			line-height: 15px;
+		}
+		.yacht-profile-spec-title {
+			font-size: 13px;
+			line-height: 18px;
+		}
+		.yacht-profile-spec-value {
+			font-size: 12px;
+			line-height: 18px;
+		}
+		.tlt-txt-op {
+			font-size: 20px;
+			margin-left: 0;
+		}
+		.blk-img {
+			width: 100%;
+		}
+		/* подгоняем страницу (destinations) */
+		.wrapp-dest-blk {
+			width: 100%;
+		}
+		.dest-blk {
+			width: 100%;
+			padding: 5px;
+			margin-left: 0;
+		}
+		/* подгоняем страницу (activities) */
+		.act-cont-blk-img {
+			width: 100%;
+			margin: 0;
+		}
+		.cont-sct {
+			left: 5%;
+		}
+		/* подгоняем страницу (food) */
+		.food-tabs-img {
+			width: 100%;
+			float: right;
+			margin-right: 0;
+		}
+		.food-tabs label {
+			display: list-item;
+			list-style-type: none;
+			border: 0;
+			top: 0;
+			left: 0;
+		}
+		/* подгоняем страницу (prices) */
+		#price-op {
+			width: 100%;
+			margin: 0 auto;
+			left: 0;
+		}
+		table {
+			overflow-x: auto;
+			display: block;
+		}
+		.prices-blk {
+			width: 100%;
+			top: 150px;
+		}
+		/* подгоняем страницу (contacts) */
+		#cont-info {
+			width: 100%;
+			min-height: 0;
+		}
+		.tlt-txt-op {
+			font-size: 24px;
+			margin-left: 0;
+		}
+		.footer-dev p {
+			font-size: 11px;
+		}
+	}
+	/***** END ДЛЯ МОБИЛ (IPHONE 6 PLUS) *****/
+	/***** START ДЛЯ МОБИЛ (NOKIA Lumia 520) *****/
+	@media only screen and (max-width: 330px) {
+		/* подгоняем страницу (main) */
+		.wrapper-main-txt {
+			width: 100%;
+			top: 85% !important;
+			left: 0 !important;
+		}
+		.container-main {
+			width: 100%;
+		}
+		.main-txt-1 {
+			width: 100%;
+		}
+		.main-txt-1 p {
+			font-size: 150%;
+			line-height: 55px;
+		}
+		/* подгоняем страницу (contacts) */
+		#cont-info {
+			width: 100%;
+			min-height: 0;
+		}
+		.tlt-txt-op {
+			font-size: 24px;
+			margin-left: 0;
+		}
+		.footer-dev p {
+			font-size: 8px;
+		}
+	}
+	/***** END ДЛЯ МОБИЛ (NOKIA Lumia 520) *****/
+	/***** START стили для осла *****/
+	@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+		body{
+			scrollbar-base-color: #fff;
+			scrollbar-base-color: #fff;
+			scrollbar-3dlight-color: #fff;
+			scrollbar-highlight-color: #fff;
+			scrollbar-track-color: #fff;
+			scrollbar-face-color: #BEBEBE;
+			scrollbar-arrow-color: #fff;
+			scrollbar-shadow-color: #fff;
+			scrollbar-dark-shadow-color: #fff;
+		}
+		.hid-menu {
+			top: 397px;
+			left: 649px;
+		}
+		.dest-blk {
+			width: 150px;
+		}
+		#price-op {
+			margin: auto;
+			width: 900px;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			position: fixed;
+		}
+		.cnt-blk {
+			overflow: auto;
+			height: 330px;
+		}
+		.prc-blk {
+			overflow: auto;
+			height: 200px;
+		}
+		.dst-blk {
+			overflow: auto;
+			height: 400px;
+		}
+		#owner-table-info p {
+			line-height: 9px;
+			font-size: 12px;
+		}
+		.first-glr-sct {
+			position: fixed;
+			bottom: 0px;
+			left: 4%;
+			width: 450px;
+		}
+		.second-glr-sct {
+			position: fixed;
+			right: 0px;
+			top: 200px;
+		}
+		.ullg-wrap {
+			width: 100%;
+			margin: 5px 5px auto;
+		}
+		.first-glr-sct .lgallery li {
+			width: 133px;
+		}
+		.second-glr-sct .lgallery li {
+			width: 117px;
+		}
+
+	}
+	/***** END стили для осла *****/
+/* ---------------------------------------------------------------- АДАПТИВ -------------------------------------------------------------------- */
